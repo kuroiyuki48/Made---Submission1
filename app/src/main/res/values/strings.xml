@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Movie Catalogue</string>
+    <string name="button_detail">Detail</string>
+    <string name="button_trailer">Trailer</string>
+    <string name="release_date">Release Date</string>
+    <string name="user_score">User Score</string>
+    <string name="genre">Genre</string>
+    <string name="overview">Overview</string>
+    <string name="favorite">Favorite</string>
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".MovieDetailActivity">
+
+        <ImageView
+            android:id="@+id/img_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            tools:src="@color/colorPrimaryDark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="match_parent"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Name"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/img_item_photo"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:layout_below="@id/tv_item_name"
+                tools:src="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/text_release"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/tv_item_name"
+                android:layout_toEndOf="@id/img_item_photo"
+                android:text="@string/release_date" />
+
+            <TextView
+                android:id="@+id/tv_item_release"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_below="@id/text_release"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/img_item_photo"
+                tools:text="Release Date" />
+
+            <TextView
+                android:id="@+id/text_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/tv_item_release"
+                android:layout_toEndOf="@id/img_item_photo"
+                android:text="@string/user_score" />
+
+            <TextView
+                android:id="@+id/tv_item_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_below="@id/text_score"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/img_item_photo"
+                tools:text="User Score" />
+
+            <TextView
+                android:id="@+id/text_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/tv_item_score"
+                android:layout_toEndOf="@id/img_item_photo"
+                android:text="@string/genre" />
+
+            <TextView
+                android:id="@+id/tv_item_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_below="@id/text_genre"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/img_item_photo"
+                tools:text="Genre" />
+
+            <TextView
+                android:id="@+id/text_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/img_item_photo"
+                android:text="@string/overview" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/text_overview"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_item_overview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:layout_below="@id/text_overview"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        tools:text="Overview" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+</LinearLayout>
